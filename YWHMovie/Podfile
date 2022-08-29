@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'YWHMovie (iOS)' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for YWHMovie (iOS)
+
+    # 业务组件
+  pod 'BBNetworkEx', :path => './../../SwiftBilibili/LocalLib/BBNetworkEx'
+
+  # 基础组件
+  pod 'LWNetwork', :path => './../../SwiftBilibili/LocalLib/LWNetwork'
+  pod 'LWExtensionKit', :path => './../../SwiftBilibili/LocalLib/LWExtensionKit'
+
+
+  
+  pod 'Moya/RxSwift', '~> 14.0.0'           # 网络库
+  pod 'SwiftLint', '~> 0.48.0'
+  
+end
+
+target 'YWHMovie (macOS)' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for YWHMovie (macOS)
+
+end
