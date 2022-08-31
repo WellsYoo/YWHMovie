@@ -1,13 +1,13 @@
 //
-//  Tests_iOSLaunchTests.swift
-//  Tests iOS
+//  YWHMovieUITestsLaunchTests.swift
+//  YWHMovieUITests
 //
-//  Created by Wells on 2022/8/29.
+//  Created by Wells on 2022/8/31.
 //
 
 import XCTest
 
-class Tests_iOSLaunchTests: XCTestCase {
+class YWHMovieUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

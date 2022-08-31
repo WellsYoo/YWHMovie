@@ -1,13 +1,13 @@
 //
-//  Tests_iOS.swift
-//  Tests iOS
+//  YWHMovieUITests.swift
+//  YWHMovieUITests
 //
-//  Created by Wells on 2022/8/29.
+//  Created by Wells on 2022/8/31.
 //
 
 import XCTest
 
-class Tests_iOS: XCTestCase {
+class YWHMovieUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

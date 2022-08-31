@@ -72,6 +72,7 @@ PODS:
   - SwiftLint (0.48.0)
   - Then (3.0.0)
   - Toast-Swift (5.0.1)
+  - URLNavigator (2.4.1)
 
 DEPENDENCIES:
   - BBNetworkEx (from `./../../SwiftBilibili/LocalLib/BBNetworkEx`)
@@ -79,6 +80,7 @@ DEPENDENCIES:
   - LWNetwork (from `./../../SwiftBilibili/LocalLib/LWNetwork`)
   - Moya/RxSwift (~> 14.0.0)
   - SwiftLint (~> 0.48.0)
+  - URLNavigator (~> 2.4.1)
 
 SPEC REPOS:
   trunk:
@@ -93,6 +95,7 @@ SPEC REPOS:
     - SwiftLint
     - Then
     - Toast-Swift
+    - URLNavigator
 
 EXTERNAL SOURCES:
   BBNetworkEx:
@@ -117,7 +120,8 @@ SPEC CHECKSUMS:
   SwiftLint: 284cea64b6187c5d6bd83e9a548a64104d546447
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  URLNavigator: 9e277a422a5c131a3e37970c2558e0e866cc22bd
 
-PODFILE CHECKSUM: ca41ffea322af24e1e9d73605559665af071b580
+PODFILE CHECKSUM: 43e076c367cd86046fcb059c7fcb9fbd7d57ebd5
 
 COCOAPODS: 1.11.3
