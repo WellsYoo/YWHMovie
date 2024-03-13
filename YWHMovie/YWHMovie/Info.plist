@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>TheMovieDb</key>
+	<dict>
+		<key>ApiKey</key>
+		<string>bcb2f68dc06fd21dd3b72a6d6d33d720</string>
+		<key>ReadAccessToken</key>
+		<string>eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiY2IyZjY4ZGMwNmZkMjFkZDNiNzJhNmQ2ZDMzZDcyMCIsInN1YiI6IjYyZDI2YmJhZDM5OWU2MDA2NjExOGQ0YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.oGPvizjGkBOuXqXNzPmxvFJworROfruZw_aQ4O19sf0</string>
+	</dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
