@@ -7,34 +7,6 @@ target 'YWHMovie' do
 
   # Pods for YWHMovie
 
-  # 业务组件
-  pod 'BBNetworkEx', :path => './../../SwiftBilibili/LocalLib/BBNetworkEx'
-
-  # 基础组件
-  pod 'LWNetwork', :path => './../../SwiftBilibili/LocalLib/LWNetwork'
-  pod 'LWExtensionKit', :path => './../../SwiftBilibili/LocalLib/LWExtensionKit'
-  pod 'CocoaLumberjack/Swift', '~> 3.6.2'   # 日志
-  pod 'SwiftDate', '~> 6.3.1'               # 日期工具
-  pod 'Tiercel', '~> 3.2.5'                 # 下载
-  pod 'SnapKit', '~> 5.6.0'                 # 布局
-  
-  pod 'Moya/RxSwift', '~> 14.0.0'           # 网络库
-  pod 'SwiftyUserDefaults', '~> 5.3.0'
-  pod 'URLNavigator', '~> 2.4.1'            # 路由
-  pod 'SnapKit', '~> 5.6.0'                 # 布局
-  pod 'ObjectMapper', '~> 4.2.0'            # 字典转模型
-  pod 'Kingfisher', '~> 7.3.2'              # 图片加载
-  pod 'Then', '~> 3.0.0'                    # 语法糖
-  
-  # UI
-  pod 'EachNavigationBar', '~> 1.16.1'      # 自定义导航栏
-  pod 'dsBridge', '~> 3.0.6'                # 原生与H5交互
-  pod 'EmptyKit', '~> 4.2.0'                # 空白页
-  pod 'RxTheme', '~> 4.1.1'
-  
-  #代码规范
-  pod 'SwiftLint', '~> 0.48.0'
-  
   target 'YWHMovieTests' do
     inherit! :search_paths
     # Pods for testing

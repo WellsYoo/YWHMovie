@@ -2,12 +2,12 @@
 //  YWHMovieUITestsLaunchTests.swift
 //  YWHMovieUITests
 //
-//  Created by Wells on 2022/8/31.
+//  Created by Wells on 2024/3/13.
 //
 
 import XCTest
 
-class YWHMovieUITestsLaunchTests: XCTestCase {
+final class YWHMovieUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

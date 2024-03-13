@@ -2,12 +2,12 @@
 //  YWHMovieUITests.swift
 //  YWHMovieUITests
 //
-//  Created by Wells on 2022/8/31.
+//  Created by Wells on 2024/3/13.
 //
 
 import XCTest
 
-class YWHMovieUITests: XCTestCase {
+final class YWHMovieUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
