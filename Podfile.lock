@@ -75,6 +75,7 @@ PODS:
     - RxSwift (~> 6.2)
   - ObjectMapper (4.2.0)
   - R.swift (7.3.2)
+  - RAMAnimatedTabBarController (5.2.0)
   - RxCocoa (6.6.0):
     - RxRelay (= 6.6.0)
     - RxSwift (= 6.6.0)
@@ -152,6 +153,7 @@ DEPENDENCIES:
   - Moya/RxSwift (~> 15.0)
   - "NSObject+Rx (~> 5.0)"
   - R.swift (~> 7.0)
+  - RAMAnimatedTabBarController (~> 5.0)
   - RxDataSources (~> 5.0)
   - RxGesture (~> 4.0)
   - RxOptional (~> 5.0)
@@ -181,6 +183,7 @@ SPEC REPOS:
     - "NSObject+Rx"
     - ObjectMapper
     - R.swift
+    - RAMAnimatedTabBarController
     - RxCocoa
     - RxDataSources
     - RxGesture
@@ -230,6 +233,7 @@ SPEC CHECKSUMS:
   "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
+  RAMAnimatedTabBarController: 6863a386e7ae2ab227cd60aa73ab8ff56cdacfdd
   RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
   RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
@@ -245,6 +249,6 @@ SPEC CHECKSUMS:
   SwiftLint: 1b7561918a19e23bfed960e40759086e70f4dba5
   Toast-Swift: dd369e68ee529f542c65bd0d0c6c50cd743cf6f2
 
-PODFILE CHECKSUM: 169817fc22ef55811b77e288073c851d4c05f510
+PODFILE CHECKSUM: 5fe3a35691dd496391e528cce85ea9f4bd645ec8
 
 COCOAPODS: 1.14.2

@@ -1,8 +1,10 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '13.0'
+use_frameworks!
+inhibit_all_warnings!
 target 'YWHMovie' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+
 
   # Pods for YWHMovie
   
@@ -46,6 +48,7 @@ target 'YWHMovie' do
   pod 'DZNEmptyDataSet', '~> 1.0'  # https://github.com/dzenbot/DZNEmptyDataSet
   pod 'Hero', '~> 1.6'  # https://github.com/lkzhao/Hero
   pod 'Localize-Swift', '~> 3.0'  # https://github.com/marmelroy/Localize-Swift
+  pod 'RAMAnimatedTabBarController', '~> 5.0'  # https://github.com/Ramotion/animated-tab-bar
 #  pod 'AcknowList', '~> 3.0'  # https://github.com/vtourraine/AcknowList
   pod 'KafkaRefresh', '~> 1.0'  # https://github.com/OpenFeyn/KafkaRefresh
 #  pod 'WhatsNewKit', '~> 1.0'  # https://github.com/SvenTiigi/WhatsNewKit

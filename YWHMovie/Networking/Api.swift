@@ -11,8 +11,8 @@ import RxCocoa
 import RxSwift
 
 protocol YWHMovieAPI {
-    func downloadString(url: URL) -> Single<String>
-    func downloadFile(url: URL, fileName: String?) -> Single<Void>
+//    func downloadString(url: URL) -> Single<String>
+//    func downloadFile(url: URL, fileName: String?) -> Single<Void>
 
     // MARK: - Authentication is optional
 

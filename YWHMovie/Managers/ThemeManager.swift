@@ -11,6 +11,7 @@ import RxSwift
 import RxCocoa
 import RxTheme
 import KafkaRefresh
+import RAMAnimatedTabBarController
 
 let globalStatusBarStyle = BehaviorRelay<UIStatusBarStyle>(value: .default)
 
@@ -267,36 +268,36 @@ extension Reactive where Base: UITableView {
 //    }
 //}
 //
-//extension Reactive where Base: RAMAnimatedTabBarItem {
-//    var iconColor: Binder<UIColor> {
-//        return Binder(self.base) { view, attr in
-//            view.iconColor = attr
-//            view.deselectAnimation()
-//        }
-//    }
-//
-//    var textColor: Binder<UIColor> {
-//        return Binder(self.base) { view, attr in
-//            view.textColor = attr
-//            view.deselectAnimation()
-//        }
-//    }
-//}
-//
-//extension Reactive where Base: RAMItemAnimation {
-//    var iconSelectedColor: Binder<UIColor> {
-//        return Binder(self.base) { view, attr in
-//            view.iconSelectedColor = attr
-//        }
-//    }
-//
-//    var textSelectedColor: Binder<UIColor> {
-//        return Binder(self.base) { view, attr in
-//            view.textSelectedColor = attr
-//        }
-//    }
-//}
-//
+extension Reactive where Base: RAMAnimatedTabBarItem {
+    var iconColor: Binder<UIColor> {
+        return Binder(self.base) { view, attr in
+            view.iconColor = attr
+            view.deselectAnimation()
+        }
+    }
+
+    var textColor: Binder<UIColor> {
+        return Binder(self.base) { view, attr in
+            view.textColor = attr
+            view.deselectAnimation()
+        }
+    }
+}
+
+extension Reactive where Base: RAMItemAnimation {
+    var iconSelectedColor: Binder<UIColor> {
+        return Binder(self.base) { view, attr in
+            view.iconSelectedColor = attr
+        }
+    }
+
+    var textSelectedColor: Binder<UIColor> {
+        return Binder(self.base) { view, attr in
+            view.textSelectedColor = attr
+        }
+    }
+}
+
 //extension Reactive where Base: UINavigationBar {
 //    var largeTitleTextAttributes: Binder<[NSAttributedString.Key: Any]?> {
 //        return Binder(self.base) { view, attr in
@@ -335,18 +336,18 @@ extension Reactive where Base: UITableView {
 //    }
 //}
 //
-//extension ThemeProxy where Base: UIApplication {
-//    var statusBarStyle: ThemeAttribute<UIStatusBarStyle> {
-//        get { fatalError("set only") }
-//        set {
-//            let disposable = newValue.stream
-//                .take(until: base.rx.deallocating)
-//                .observe(on: MainScheduler.instance)
-//                .bind(to: base.rx.statusBarStyle)
-//            hold(disposable, for: "statusBarStyle")
-//        }
-//    }
-//}
+extension ThemeProxy where Base: UIApplication {
+    var statusBarStyle: ThemeAttribute<UIStatusBarStyle> {
+        get { fatalError("set only") }
+        set {
+            let disposable = newValue.stream
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
+                .bind(to: base.rx.statusBarStyle)
+            hold(disposable, for: "statusBarStyle")
+        }
+    }
+}
 //
 //extension ThemeProxy where Base: UIButton {
 //    func backgroundImage(from newValue: ThemeAttribute<UIColor>, for state: UIControl.State) {
@@ -408,63 +409,63 @@ extension Reactive where Base: UITableView {
 //    }
 //}
 //
-//extension ThemeProxy where Base: RAMAnimatedTabBarItem {
-//    var iconColor: ThemeAttribute<UIColor> {
-//        get { fatalError("set only") }
-//        set {
-//            let disposable = newValue.stream
-//                .take(until: base.rx.deallocating)
-//                .observe(on: MainScheduler.instance)
-//                .bind(to: base.rx.iconColor)
-//            hold(disposable, for: "iconColor")
-//        }
-//    }
-//
-//    var textColor: ThemeAttribute<UIColor> {
-//        get { fatalError("set only") }
-//        set {
-//            let disposable = newValue.stream
-//                .take(until: base.rx.deallocating)
-//                .observe(on: MainScheduler.instance)
-//                .bind(to: base.rx.textColor)
-//            hold(disposable, for: "textColor")
-//        }
-//    }
-//}
-//
-//extension ThemeProxy where Base: RAMItemAnimation {
-//    var iconSelectedColor: ThemeAttribute<UIColor> {
-//        get { fatalError("set only") }
-//        set {
-//            let disposable = newValue.stream
-//                .take(until: base.rx.deallocating)
-//                .observe(on: MainScheduler.instance)
-//                .bind(to: base.rx.iconSelectedColor)
-//            hold(disposable, for: "iconSelectedColor")
-//        }
-//    }
-//
-//    var textSelectedColor: ThemeAttribute<UIColor> {
-//        get { fatalError("set only") }
-//        set {
-//            let disposable = newValue.stream
-//                .take(until: base.rx.deallocating)
-//                .observe(on: MainScheduler.instance)
-//                .bind(to: base.rx.textSelectedColor)
-//            hold(disposable, for: "textSelectedColor")
-//        }
-//    }
-//}
-//
-//extension ThemeProxy where Base: KafkaRefreshDefaults {
-//    var themeColor: ThemeAttribute<UIColor?> {
-//        get { fatalError("set only") }
-//        set {
-//            let disposable = newValue.stream
-//                .take(until: base.rx.deallocating)
-//                .observe(on: MainScheduler.instance)
-//                .bind(to: base.rx.themeColor)
-//            hold(disposable, for: "themeColor")
-//        }
-//    }
-//}
+extension ThemeProxy where Base: RAMAnimatedTabBarItem {
+    var iconColor: ThemeAttribute<UIColor> {
+        get { fatalError("set only") }
+        set {
+            let disposable = newValue.stream
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
+                .bind(to: base.rx.iconColor)
+            hold(disposable, for: "iconColor")
+        }
+    }
+
+    var textColor: ThemeAttribute<UIColor> {
+        get { fatalError("set only") }
+        set {
+            let disposable = newValue.stream
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
+                .bind(to: base.rx.textColor)
+            hold(disposable, for: "textColor")
+        }
+    }
+}
+
+extension ThemeProxy where Base: RAMItemAnimation {
+    var iconSelectedColor: ThemeAttribute<UIColor> {
+        get { fatalError("set only") }
+        set {
+            let disposable = newValue.stream
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
+                .bind(to: base.rx.iconSelectedColor)
+            hold(disposable, for: "iconSelectedColor")
+        }
+    }
+
+    var textSelectedColor: ThemeAttribute<UIColor> {
+        get { fatalError("set only") }
+        set {
+            let disposable = newValue.stream
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
+                .bind(to: base.rx.textSelectedColor)
+            hold(disposable, for: "textSelectedColor")
+        }
+    }
+}
+
+extension ThemeProxy where Base: KafkaRefreshDefaults {
+    var themeColor: ThemeAttribute<UIColor?> {
+        get { fatalError("set only") }
+        set {
+            let disposable = newValue.stream
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
+                .bind(to: base.rx.themeColor)
+            hold(disposable, for: "themeColor")
+        }
+    }
+}

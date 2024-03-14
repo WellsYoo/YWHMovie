@@ -10,28 +10,28 @@ import Foundation
 import RxSwift
 import RxCocoa
 import SnapKit
-import IQKeyboardManagerSwift
-import CocoaLumberjack
+//import IQKeyboardManagerSwift
+//import CocoaLumberjack
 import Kingfisher
 #if DEBUG
 import FLEX
 #endif
-import FirebaseCrashlytics
+//import FirebaseCrashlytics
 import NSObject_Rx
 import RxViewController
 import RxOptional
 import RxGesture
 import SwifterSwift
-import SwiftDate
+//import SwiftDate
 import Hero
 import KafkaRefresh
-import Mixpanel
-import FirebaseCore
-import DropDown
+//import Mixpanel
+//import FirebaseCore
+//import DropDown
 import Toast_Swift
-import GoogleMobileAds
+//import GoogleMobileAds
 
-typealias DropDownView = DropDown
+//typealias DropDownView = DropDown
 
 /// The manager class for configuring all libraries used in app.
 class LibsManager: NSObject {
@@ -39,31 +39,31 @@ class LibsManager: NSObject {
     /// The default singleton instance.
     static let shared = LibsManager()
 
-    let bannersEnabled = BehaviorRelay(value: UserDefaults.standard.bool(forKey: Configs.UserDefaultsKeys.bannersEnabled))
+//    let bannersEnabled = BehaviorRelay(value: UserDefaults.standard.bool(forKey: Configs.UserDefaultsKeys.bannersEnabled))
 
     private override init() {
         super.init()
 
-        if UserDefaults.standard.object(forKey: Configs.UserDefaultsKeys.bannersEnabled) == nil {
-            bannersEnabled.accept(true)
-        }
-
-        bannersEnabled.skip(1).subscribe(onNext: { (enabled) in
-            UserDefaults.standard.set(enabled, forKey: Configs.UserDefaultsKeys.bannersEnabled)
-            analytics.set(.adsEnabled(value: enabled))
-        }).disposed(by: rx.disposeBag)
+//        if UserDefaults.standard.object(forKey: Configs.UserDefaultsKeys.bannersEnabled) == nil {
+//            bannersEnabled.accept(true)
+//        }
+//
+//        bannersEnabled.skip(1).subscribe(onNext: { (enabled) in
+//            UserDefaults.standard.set(enabled, forKey: Configs.UserDefaultsKeys.bannersEnabled)
+//            analytics.set(.adsEnabled(value: enabled))
+//        }).disposed(by: rx.disposeBag)
     }
 
     func setupLibs() {
         let libsManager = LibsManager.shared
-        libsManager.setupCocoaLumberjack()
-        libsManager.setupAnalytics()
-        libsManager.setupAds()
+//        libsManager.setupCocoaLumberjack()
+//        libsManager.setupAnalytics()
+//        libsManager.setupAds()
         libsManager.setupTheme()
         libsManager.setupKafkaRefresh()
         libsManager.setupFLEX()
-        libsManager.setupKeyboardManager()
-        libsManager.setupDropDown()
+//        libsManager.setupKeyboardManager()
+//        libsManager.setupDropDown()
         libsManager.setupToast()
     }
 
@@ -71,16 +71,16 @@ class LibsManager: NSObject {
         UIApplication.shared.theme.statusBarStyle = themeService.attribute { $0.statusBarStyle }
     }
 
-    func setupDropDown() {
-        themeService.typeStream.subscribe(onNext: { (themeType) in
-            let theme = themeType.associatedObject
-            DropDown.appearance().backgroundColor = theme.primary
-            DropDown.appearance().selectionBackgroundColor = theme.primaryDark
-            DropDown.appearance().textColor = theme.text
-            DropDown.appearance().selectedTextColor = theme.text
-            DropDown.appearance().separatorColor = theme.separator
-        }).disposed(by: rx.disposeBag)
-    }
+//    func setupDropDown() {
+//        themeService.typeStream.subscribe(onNext: { (themeType) in
+//            let theme = themeType.associatedObject
+//            DropDown.appearance().backgroundColor = theme.primary
+//            DropDown.appearance().selectionBackgroundColor = theme.primaryDark
+//            DropDown.appearance().textColor = theme.text
+//            DropDown.appearance().selectedTextColor = theme.text
+//            DropDown.appearance().separatorColor = theme.separator
+//        }).disposed(by: rx.disposeBag)
+//    }
 
     func setupToast() {
         ToastManager.shared.isTapToDismissEnabled = true
@@ -100,9 +100,9 @@ class LibsManager: NSObject {
         }
     }
 
-    func setupKeyboardManager() {
-        IQKeyboardManager.shared.enable = true
-    }
+//    func setupKeyboardManager() {
+//        IQKeyboardManager.shared.enable = true
+//    }
 
     func setupKingfisher() {
         // Set maximum disk cache size for default cache. Default value is 0, which means no limit.
@@ -115,13 +115,13 @@ class LibsManager: NSObject {
         ImageDownloader.default.downloadTimeout = 15.0 // 15 sec
     }
 
-    func setupCocoaLumberjack() {
-        DDLog.add(DDOSLogger.sharedInstance)
-        let fileLogger: DDFileLogger = DDFileLogger() // File Logger
-        fileLogger.rollingFrequency = TimeInterval(60*60*24)  // 24 hours
-        fileLogger.logFileManager.maximumNumberOfLogFiles = 7
-        DDLog.add(fileLogger)
-    }
+//    func setupCocoaLumberjack() {
+//        DDLog.add(DDOSLogger.sharedInstance)
+//        let fileLogger: DDFileLogger = DDFileLogger() // File Logger
+//        fileLogger.rollingFrequency = TimeInterval(60*60*24)  // 24 hours
+//        fileLogger.logFileManager.maximumNumberOfLogFiles = 7
+//        DDLog.add(fileLogger)
+//    }
 
     func setupFLEX() {
         #if DEBUG
@@ -129,15 +129,15 @@ class LibsManager: NSObject {
         #endif
     }
 
-    func setupAnalytics() {
-        FirebaseApp.configure()
-        Mixpanel.initialize(token: Keys.mixpanel.apiKey, trackAutomaticEvents: true)
-        FirebaseConfiguration.shared.setLoggerLevel(.min)
-    }
+//    func setupAnalytics() {
+//        FirebaseApp.configure()
+//        Mixpanel.initialize(token: Keys.mixpanel.apiKey, trackAutomaticEvents: true)
+//        FirebaseConfiguration.shared.setLoggerLevel(.min)
+//    }
 
-    func setupAds() {
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
-    }
+//    func setupAds() {
+//        GADMobileAds.sharedInstance().start(completionHandler: nil)
+//    }
 }
 
 extension LibsManager {
@@ -145,7 +145,7 @@ extension LibsManager {
     func showFlex() {
         #if DEBUG
         FLEXManager.shared.showExplorer()
-        analytics.log(.flexOpened)
+//        analytics.log(.flexOpened)
         #endif
     }
 

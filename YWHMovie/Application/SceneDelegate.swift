@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         // Show initial screen
-//        Application.shared.presentInitialScreen(in: window!)
+        Application.share.presentInitialScreen(in: window!)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

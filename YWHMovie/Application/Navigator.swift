@@ -14,6 +14,7 @@ import RxSwift
 import SafariServices
 import UIKit
 
+
 protocol Navigatable {
     var navigator: Navigator! { get set }
 }
@@ -24,7 +25,7 @@ class Navigator {
     // MARK: - segues list, all app scenes
 
     enum Scene {
-//        case tabs(viewModel: HomeTabBarViewModel)
+        case tabs(viewModel: HomeTabBarViewModel)
 //        case search(viewModel: SearchViewModel)
 //        case languages(viewModel: LanguagesViewModel)
 //        case users(viewModel: UsersViewModel)
@@ -67,13 +68,13 @@ class Navigator {
 
     func get(segue: Scene) -> UIViewController? {
         switch segue {
-//        case .tabs(let viewModel):
-//            let rootVC = HomeTabBarController(viewModel: viewModel, navigator: self)
-//            let detailVC = InitialSplitViewController(viewModel: nil, navigator: self)
-//            let detailNavVC = NavigationController(rootViewController: detailVC)
-//            let splitVC = SplitViewController()
-//            splitVC.viewControllers = [rootVC, detailNavVC]
-//            return splitVC
+        case .tabs(let viewModel):
+            let rootVC = HomeTabBarController(navigator: self, viewModel: viewModel)
+            let detailVC = InitialSplitViewController(viewModel: nil, navigator: self)
+            let detailNavVC = NavigationController(rootViewController: detailVC)
+            let splitVC = SplitViewController()
+            splitVC.viewControllers = [rootVC, detailNavVC]
+            return splitVC
 //
 //        case .search(let viewModel): return SearchViewController(viewModel: viewModel, navigator: self)
 //        case .languages(let viewModel): return LanguagesViewController(viewModel: viewModel, navigator: self)

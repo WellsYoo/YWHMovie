@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1EA42E8F2BA15641003B104A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA42E8E2BA15641003B104A /* AppDelegate.swift */; };
 		1EA42E912BA15641003B104A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA42E902BA15641003B104A /* SceneDelegate.swift */; };
-		1EA42E932BA15641003B104A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA42E922BA15641003B104A /* ViewController.swift */; };
 		1EA42E962BA15641003B104A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA42E942BA15641003B104A /* Main.storyboard */; };
 		1EA42E982BA15642003B104A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EA42E972BA15642003B104A /* Assets.xcassets */; };
 		1EA42E9B2BA15642003B104A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA42E992BA15642003B104A /* LaunchScreen.storyboard */; };
@@ -34,7 +33,6 @@
 		1EA42F0B2BA18EB0003B104A /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA42F032BA18EB0003B104A /* LogManager.swift */; };
 		1EA42F102BA1952E003B104A /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA42F0F2BA1952E003B104A /* Application.swift */; };
 		1EA42F152BA198E0003B104A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1EA42F142BA198E0003B104A /* .swiftlint.yml */; };
-		1EB41DEE2BA1B50600F87EFA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB41DED2BA1B50600F87EFA /* R.generated.swift */; };
 		1EC3517F2BA1A59E00EF8BF6 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC3517E2BA1A59E00EF8BF6 /* Navigator.swift */; };
 		1EC351822BA1A9E800EF8BF6 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC351812BA1A9E800EF8BF6 /* NavigationController.swift */; };
 		1EC351842BA1AAE700EF8BF6 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC351832BA1AAE700EF8BF6 /* ViewModelType.swift */; };
@@ -88,6 +86,17 @@
 		1EC3525A2BA1AE6100EF8BF6 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC3522A2BA1AE6100EF8BF6 /* ErrorResponse.swift */; };
 		1EC3525B2BA1AE6100EF8BF6 /* TrendingGithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC3522B2BA1AE6100EF8BF6 /* TrendingGithubAPI.swift */; };
 		1EC3525F2BA1B07800EF8BF6 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC3525E2BA1B07800EF8BF6 /* Icons.xcassets */; };
+		1EF3654E2BA2909E00530209 /* HomeTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3654D2BA2909E00530209 /* HomeTabBarViewModel.swift */; };
+		1EF365502BA29C7300530209 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3654F2BA29C7300530209 /* HomeTabBarController.swift */; };
+		1EF365522BA2A16300530209 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF365512BA2A16300530209 /* R.generated.swift */; };
+		1EF365542BA2D91600530209 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF365532BA2D91600530209 /* ViewController.swift */; };
+		1EF365562BA2DA5400530209 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF365552BA2DA5400530209 /* TableViewController.swift */; };
+		1EF365582BA2DAA700530209 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF365572BA2DAA700530209 /* TableView.swift */; };
+		1EF3655A2BA2DBB700530209 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF365592BA2DBB700530209 /* View.swift */; };
+		1EF3655C2BA2E0DA00530209 /* InitialSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3655B2BA2E0DA00530209 /* InitialSplitViewController.swift */; };
+		1EF3655E2BA2FC7C00530209 /* LibsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3655D2BA2FC7C00530209 /* LibsManager.swift */; };
+		1EF365602BA2FEA400530209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1EF3655F2BA2FEA400530209 /* Localizable.strings */; };
+		1EF365622BA2FF0C00530209 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF365612BA2FF0C00530209 /* SplitViewController.swift */; };
 		4F981E09F5CAEF841A6FCC28 /* Pods_YWHMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73A783E7C07BBAF44B78F28 /* Pods_YWHMovie.framework */; };
 		65E4B4C3232F46AD25E0D049 /* Pods_YWHMovie_YWHMovieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A717FC0B36C20DB035EDCF /* Pods_YWHMovie_YWHMovieUITests.framework */; };
 		89FE1F0A7B895A4BD7857C24 /* Pods_YWHMovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D572FAB4A259F927BF8FDEB1 /* Pods_YWHMovieTests.framework */; };
@@ -115,7 +124,6 @@
 		1EA42E8B2BA15641003B104A /* YWHMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YWHMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA42E8E2BA15641003B104A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EA42E902BA15641003B104A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1EA42E922BA15641003B104A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1EA42E952BA15641003B104A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1EA42E972BA15642003B104A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EA42E9A2BA15642003B104A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -143,7 +151,6 @@
 		1EA42F032BA18EB0003B104A /* LogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		1EA42F0F2BA1952E003B104A /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		1EA42F142BA198E0003B104A /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		1EB41DED2BA1B50600F87EFA /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		1EC3517E2BA1A59E00EF8BF6 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		1EC351812BA1A9E800EF8BF6 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		1EC351832BA1AAE700EF8BF6 /* ViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
@@ -197,6 +204,17 @@
 		1EC3522A2BA1AE6100EF8BF6 /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		1EC3522B2BA1AE6100EF8BF6 /* TrendingGithubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingGithubAPI.swift; sourceTree = "<group>"; };
 		1EC3525E2BA1B07800EF8BF6 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		1EF3654D2BA2909E00530209 /* HomeTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewModel.swift; sourceTree = "<group>"; };
+		1EF3654F2BA29C7300530209 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		1EF365512BA2A16300530209 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		1EF365532BA2D91600530209 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1EF365552BA2DA5400530209 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1EF365572BA2DAA700530209 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		1EF365592BA2DBB700530209 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		1EF3655B2BA2E0DA00530209 /* InitialSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSplitViewController.swift; sourceTree = "<group>"; };
+		1EF3655D2BA2FC7C00530209 /* LibsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibsManager.swift; sourceTree = "<group>"; };
+		1EF3655F2BA2FEA400530209 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		1EF365612BA2FF0C00530209 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		3EF2AD89C5F09DB80FC7BD3D /* Pods-YWHMovie-YWHMovieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWHMovie-YWHMovieUITests.release.xcconfig"; path = "Target Support Files/Pods-YWHMovie-YWHMovieUITests/Pods-YWHMovie-YWHMovieUITests.release.xcconfig"; sourceTree = "<group>"; };
 		78920D673FA52817309150F1 /* Pods-YWHMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWHMovie.debug.xcconfig"; path = "Target Support Files/Pods-YWHMovie/Pods-YWHMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		A73A783E7C07BBAF44B78F28 /* Pods_YWHMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YWHMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -260,7 +278,7 @@
 		1EA42E8D2BA15641003B104A /* YWHMovie */ = {
 			isa = PBXGroup;
 			children = (
-				1EC3525D2BA1AF5800EF8BF6 /* Resources */,
+				1EF3654B2BA2908400530209 /* Modules */,
 				1EC351852BA1AB0900EF8BF6 /* Networking */,
 				1EC351802BA1A9D900EF8BF6 /* Common */,
 				1EA42F0E2BA19500003B104A /* Application */,
@@ -268,7 +286,7 @@
 				1EA42EE02BA18D4B003B104A /* Configs */,
 				1EA42EC52BA18B9F003B104A /* Extensions */,
 				1EA42EBE2BA15958003B104A /* Third Party */,
-				1EA42E922BA15641003B104A /* ViewController.swift */,
+				1EC3525D2BA1AF5800EF8BF6 /* Resources */,
 				1EA42E9C2BA15642003B104A /* Info.plist */,
 				1EA42E942BA15641003B104A /* Main.storyboard */,
 				1EA42E992BA15642003B104A /* LaunchScreen.storyboard */,
@@ -395,6 +413,7 @@
 		1EA42EFD2BA18EB0003B104A /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				1EF3655D2BA2FC7C00530209 /* LibsManager.swift */,
 				1EA42F002BA18EB0003B104A /* ThemeManager.swift */,
 				1EA42F012BA18EB0003B104A /* Reachability.swift */,
 				1EA42F032BA18EB0003B104A /* LogManager.swift */,
@@ -416,8 +435,13 @@
 		1EC351802BA1A9D900EF8BF6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1EF365612BA2FF0C00530209 /* SplitViewController.swift */,
+				1EF365592BA2DBB700530209 /* View.swift */,
 				1EC351832BA1AAE700EF8BF6 /* ViewModelType.swift */,
 				1EC351812BA1A9E800EF8BF6 /* NavigationController.swift */,
+				1EF365532BA2D91600530209 /* ViewController.swift */,
+				1EF365552BA2DA5400530209 /* TableViewController.swift */,
+				1EF365572BA2DAA700530209 /* TableView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -498,11 +522,30 @@
 		1EC3525D2BA1AF5800EF8BF6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1EB41DED2BA1B50600F87EFA /* R.generated.swift */,
+				1EF3655F2BA2FEA400530209 /* Localizable.strings */,
+				1EF365512BA2A16300530209 /* R.generated.swift */,
 				1EC3525E2BA1B07800EF8BF6 /* Icons.xcassets */,
 				1EA42E972BA15642003B104A /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1EF3654B2BA2908400530209 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1EF3654C2BA2908E00530209 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1EF3654C2BA2908E00530209 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1EF3654D2BA2909E00530209 /* HomeTabBarViewModel.swift */,
+				1EF3654F2BA29C7300530209 /* HomeTabBarController.swift */,
+				1EF3655B2BA2E0DA00530209 /* InitialSplitViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		4754494E0399B44950D2CBE0 /* Frameworks */ = {
@@ -536,12 +579,12 @@
 			buildConfigurationList = 1EA42EB52BA15642003B104A /* Build configuration list for PBXNativeTarget "YWHMovie" */;
 			buildPhases = (
 				AF77086A2F4C1DED2205AADF /* [CP] Check Pods Manifest.lock */,
+				1EC3525C2BA1AEDE00EF8BF6 /* R.swift */,
+				1EA42F132BA1983E003B104A /* SwiftLint */,
 				1EA42E872BA15641003B104A /* Sources */,
 				1EA42E882BA15641003B104A /* Frameworks */,
 				1EA42E892BA15641003B104A /* Resources */,
-				1EC3525C2BA1AEDE00EF8BF6 /* R.swift */,
 				031B65678F37C3C80AB1A200 /* [CP] Embed Pods Frameworks */,
-				1EA42F132BA1983E003B104A /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -652,6 +695,7 @@
 				1EC352402BA1AE6100EF8BF6 /* UserFollowers.json in Resources */,
 				1EC352512BA1AE6100EF8BF6 /* Profile.json in Resources */,
 				1EC3523F2BA1AE6100EF8BF6 /* UserSearch.json in Resources */,
+				1EF365602BA2FEA400530209 /* Localizable.strings in Resources */,
 				1EC352502BA1AE6100EF8BF6 /* RepositoryBranches.json in Resources */,
 				1EC352492BA1AE6100EF8BF6 /* EmptyObject.json in Resources */,
 				1EC352482BA1AE6100EF8BF6 /* RepositoryReadme.json in Resources */,
@@ -853,15 +897,16 @@
 			files = (
 				1EA42F102BA1952E003B104A /* Application.swift in Sources */,
 				1EA42EDB2BA18B9F003B104A /* Kingfisher+Rx.swift in Sources */,
-				1EB41DEE2BA1B50600F87EFA /* R.generated.swift in Sources */,
+				1EF365502BA29C7300530209 /* HomeTabBarController.swift in Sources */,
 				1EA42EFC2BA18D4B003B104A /* Configs.swift in Sources */,
 				1EC352582BA1AE6100EF8BF6 /* Networking.swift in Sources */,
-				1EA42E932BA15641003B104A /* ViewController.swift in Sources */,
 				1EA42EC42BA15958003B104A /* ActivityIndicator.swift in Sources */,
 				1EA42ED72BA18B9F003B104A /* UIColor+SwiftHub.swift in Sources */,
 				1EA42E8F2BA15641003B104A /* AppDelegate.swift in Sources */,
+				1EF3655C2BA2E0DA00530209 /* InitialSplitViewController.swift in Sources */,
 				1EA42EDF2BA18B9F003B104A /* Foundation+SwiftHub.swift in Sources */,
 				1EC352562BA1AE6100EF8BF6 /* CodetabsApi.swift in Sources */,
+				1EF3655E2BA2FC7C00530209 /* LibsManager.swift in Sources */,
 				1EA42ED82BA18B9F003B104A /* UIView+Borders.swift in Sources */,
 				1EC351C92BA1AB0900EF8BF6 /* Api.swift in Sources */,
 				1EA42EDE2BA18B9F003B104A /* UIFont+SwiftHub.swift in Sources */,
@@ -871,14 +916,21 @@
 				1EC3525A2BA1AE6100EF8BF6 /* ErrorResponse.swift in Sources */,
 				1EA42F0B2BA18EB0003B104A /* LogManager.swift in Sources */,
 				1EA42EDD2BA18B9F003B104A /* Observable+Operators.swift in Sources */,
+				1EF365562BA2DA5400530209 /* TableViewController.swift in Sources */,
+				1EF365522BA2A16300530209 /* R.generated.swift in Sources */,
 				1EC352572BA1AE6100EF8BF6 /* GitHubAPI.swift in Sources */,
+				1EF3654E2BA2909E00530209 /* HomeTabBarViewModel.swift in Sources */,
 				1EC3525B2BA1AE6100EF8BF6 /* TrendingGithubAPI.swift in Sources */,
 				1EA42E912BA15641003B104A /* SceneDelegate.swift in Sources */,
 				1EC3517F2BA1A59E00EF8BF6 /* Navigator.swift in Sources */,
+				1EF365542BA2D91600530209 /* ViewController.swift in Sources */,
 				1EA42EC32BA15958003B104A /* ErrorTracker.swift in Sources */,
 				1EA42F082BA18EB0003B104A /* ThemeManager.swift in Sources */,
 				1EA42ED92BA18B9F003B104A /* UIView+SwiftHub.swift in Sources */,
 				1EC352592BA1AE6100EF8BF6 /* RestApi.swift in Sources */,
+				1EF365582BA2DAA700530209 /* TableView.swift in Sources */,
+				1EF3655A2BA2DBB700530209 /* View.swift in Sources */,
+				1EF365622BA2FF0C00530209 /* SplitViewController.swift in Sources */,
 				1EA42EDA2BA18B9F003B104A /* KafkaRefresh+Rx.swift in Sources */,
 				1EA42F092BA18EB0003B104A /* Reachability.swift in Sources */,
 				1EA42ED62BA18B9F003B104A /* UIImage+SwiftHub.swift in Sources */,
