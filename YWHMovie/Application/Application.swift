@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 final class Application: NSObject {
-    static let share = Application()
+    static let shared = Application()
     var window: UIWindow?
     var provider: YWHMovieAPI?
     let navigator: Navigator
@@ -30,8 +30,8 @@ final class Application: NSObject {
         let githubProvider = GithubNetworking.defaultNetworking()
 //        let trendingGithubProvider = staging ? TrendingGithubNetworking.stubbingNetworking() : TrendingGithubNetworking.defaultNetworking()
 //        let codetabsProvider = staging ? CodetabsNetworking.stubbingNetworking() : CodetabsNetworking.defaultNetworking()
-        let restApi = RestApi(githubProvider: githubProvider)
-        provider = restApi
+//        let restApi = RestApi(githubProvider: githubProvider)
+//        provider = restApi
 
 //        if let token = authManager.token, Configs.Network.useStaging == false {
 //            switch token.type() {

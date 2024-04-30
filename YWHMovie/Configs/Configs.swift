@@ -34,7 +34,7 @@ struct Configs {
     struct App {
         static let githubUrl = "https://github.com/khoren93/SwiftHub"
         static let githubScope = "user+repo+notifications+read:org"
-        static let bundleIdentifier = "com.public.SwiftHub"
+        static let bundleIdentifier = "com.public.YWHMovie"
     }
 
     struct Network {

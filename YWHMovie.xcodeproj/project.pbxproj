@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E6C14EF2BE0962F00E1ACB8 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6C14EE2BE0962F00E1ACB8 /* AuthManager.swift */; };
+		1E6C14F22BE0968B00E1ACB8 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6C14F12BE0968B00E1ACB8 /* Token.swift */; };
 		1EA42E8F2BA15641003B104A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA42E8E2BA15641003B104A /* AppDelegate.swift */; };
 		1EA42E912BA15641003B104A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA42E902BA15641003B104A /* SceneDelegate.swift */; };
 		1EA42E962BA15641003B104A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA42E942BA15641003B104A /* Main.storyboard */; };
@@ -121,6 +123,8 @@
 
 /* Begin PBXFileReference section */
 		13C16C6C4A68D60F499EAC57 /* Pods-YWHMovie-YWHMovieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWHMovie-YWHMovieUITests.debug.xcconfig"; path = "Target Support Files/Pods-YWHMovie-YWHMovieUITests/Pods-YWHMovie-YWHMovieUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E6C14EE2BE0962F00E1ACB8 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		1E6C14F12BE0968B00E1ACB8 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		1EA42E8B2BA15641003B104A /* YWHMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YWHMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA42E8E2BA15641003B104A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EA42E902BA15641003B104A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -253,6 +257,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E6C14F02BE0967E00E1ACB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E6C14F12BE0968B00E1ACB8 /* Token.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1EA42E822BA15641003B104A = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +290,7 @@
 		1EA42E8D2BA15641003B104A /* YWHMovie */ = {
 			isa = PBXGroup;
 			children = (
+				1E6C14F02BE0967E00E1ACB8 /* Model */,
 				1EF3654B2BA2908400530209 /* Modules */,
 				1EC351852BA1AB0900EF8BF6 /* Networking */,
 				1EC351802BA1A9D900EF8BF6 /* Common */,
@@ -413,6 +426,7 @@
 		1EA42EFD2BA18EB0003B104A /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				1E6C14EE2BE0962F00E1ACB8 /* AuthManager.swift */,
 				1EF3655D2BA2FC7C00530209 /* LibsManager.swift */,
 				1EA42F002BA18EB0003B104A /* ThemeManager.swift */,
 				1EA42F012BA18EB0003B104A /* Reachability.swift */,
@@ -904,6 +918,7 @@
 				1EA42ED72BA18B9F003B104A /* UIColor+SwiftHub.swift in Sources */,
 				1EA42E8F2BA15641003B104A /* AppDelegate.swift in Sources */,
 				1EF3655C2BA2E0DA00530209 /* InitialSplitViewController.swift in Sources */,
+				1E6C14EF2BE0962F00E1ACB8 /* AuthManager.swift in Sources */,
 				1EA42EDF2BA18B9F003B104A /* Foundation+SwiftHub.swift in Sources */,
 				1EC352562BA1AE6100EF8BF6 /* CodetabsApi.swift in Sources */,
 				1EF3655E2BA2FC7C00530209 /* LibsManager.swift in Sources */,
@@ -915,6 +930,7 @@
 				1EC351822BA1A9E800EF8BF6 /* NavigationController.swift in Sources */,
 				1EC3525A2BA1AE6100EF8BF6 /* ErrorResponse.swift in Sources */,
 				1EA42F0B2BA18EB0003B104A /* LogManager.swift in Sources */,
+				1E6C14F22BE0968B00E1ACB8 /* Token.swift in Sources */,
 				1EA42EDD2BA18B9F003B104A /* Observable+Operators.swift in Sources */,
 				1EF365562BA2DA5400530209 /* TableViewController.swift in Sources */,
 				1EF365522BA2A16300530209 /* R.generated.swift in Sources */,

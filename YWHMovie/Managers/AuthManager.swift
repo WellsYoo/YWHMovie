@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import KeychainAccess
+//import KeychainAccess
 import ObjectMapper
 import RxSwift
 import RxCocoa
@@ -21,7 +21,7 @@ class AuthManager {
 
     // MARK: - Properties
     fileprivate let tokenKey = "TokenKey"
-    fileprivate let keychain = Keychain(service: Configs.App.bundleIdentifier)
+//    fileprivate let keychain = Keychain(service: Configs.App.bundleIdentifier)
 
     let tokenChanged = PublishSubject<Token?>()
 
@@ -31,15 +31,16 @@ class AuthManager {
 
     var token: Token? {
         get {
-            guard let jsonString = keychain[tokenKey] else { return nil }
-            return Mapper<Token>().map(JSONString: jsonString)
+//            guard let jsonString = keychain[tokenKey] else { return nil }
+//            return Mapper<Token>().map(JSONString: jsonString)
+            return nil
         }
         set {
-            if let token = newValue, let jsonString = token.toJSONString() {
-                keychain[tokenKey] = jsonString
-            } else {
-                keychain[tokenKey] = nil
-            }
+//            if let token = newValue, let jsonString = token.toJSONString() {
+//                keychain[tokenKey] = jsonString
+//            } else {
+//                keychain[tokenKey] = nil
+//            }
             tokenChanged.onNext(newValue)
             loggedIn.accept(hasValidToken)
         }
